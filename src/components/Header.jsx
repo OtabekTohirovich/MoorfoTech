@@ -52,7 +52,7 @@ function Header(props) {
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
-      sx={{ textAlign: "center", background: "#131313" }}
+      sx={{ textAlign: "center", background: "#31c48d", color: '#fff', height: '100vh' }}
     >
       <Box sx={{ my: 2 }}>MUI</Box>
       <Divider />
