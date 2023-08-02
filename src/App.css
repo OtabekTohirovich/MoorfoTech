@@ -1,0 +1,71 @@
+.wreapper-hearder {
+  width: 100%;
+  min-height: 50vh;
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  opacity: 1;
+  background-image: url(https://webline.uz/storage/images/55cfbc4afa2a41878abcc736d8ec075e.webp);
+} 
+/* sx={{
+  display: "flex",
+  backgroundImage:
+    "",
+  height: "100vh",
+  backgroundSize: "100%",
+  backgroundRepeat: "no-repeat",
+  minHeight: "50vh",
+  position: 'relative',
+  '&::before': {
+      content: '""',
+      position: 'absolute',
+      width: '100%',
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0,
+      background: 'url("../assets/sl_bg.webp") 50% 50%/cover no-repeat',
+    },
+}}  */
+.wreapper-hearder::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('./assets//sl_bg.webp') 50% 50%/cover no-repeat;
+}
+
+.wreapper-hearder::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,.584);
+}
+
+.select-container {
+  position: relative; /* Set position to relative */
+  z-index: 1000; /* Set the zIndex value as required */
+}
+
+@media only screen and (min-width: 768px) {
+  .wreapper-hearder {
+    min-height: 55vh;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .wreapper-hearder {
+    min-height: 100vh;
+  }
+}

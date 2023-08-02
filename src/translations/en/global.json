@@ -1,0 +1,35 @@
+{
+  "header": {
+    "massage": "Welocome"
+  },
+  "body": {
+    "navbar": {
+      "home": "HOME",
+      "services": "SERVICES",
+      "company": "COMPANY",
+      "partfolio": "PARTFOLIO",
+      "contacts": "CONTACTS"
+    },
+    "navbtn": "Connect with us",
+    "additiontitle": "Welcome to Webline",
+    "title": "We will develop an effective web-project for your business",
+    "btnhome": "See portfolio",
+    "btnend": "Conditions",
+    "firstsection": "We will help you become your business                ",
+    "firsttitle": "Uniques and profitable",
+    "secondsec": {
+      "title1": "Creating mobile applications",
+      "title2": "Website development",
+      "title3": "Promotion websites",
+      "title4": "Contextual advertising in Uzbekistan",
+      "title5": "Technical support",
+      "title6": "UI/UX design",
+      "title7": "UX/UI App Design",
+      "title8": "Program development"
+    },
+    "footerTitle": "We develop and implement websites, create a corporate identity, and constantly share information and technical support for projects with you.",
+    "title3": "OUR CASE",
+    "sectionHead": "Web design",
+    "sectionHeads": "Turnkey website"
+  }
+}

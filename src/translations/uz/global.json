@@ -1,0 +1,31 @@
+{
+  "header": {
+    "massage": "Welocome"
+  },
+  "body": {
+    "navbar": {
+      "home": "Asosiy",
+      "services": "Xizmatlar",
+      "company": "Kompaniya",
+      "partfolio": "Partfolio",
+      "contacts": "Aloqa"
+    },
+    "navbtn": "Biz bilan bog'lanish",
+    "additiontitle": "Webline'ga xush kelibsiz",
+    "title": "Biznesingiz uchun effektiv veb-loyiha ishlab chiqamiz",
+    "btnhome": "Portfolioni ko'rish",
+    "btnend": "Shartlarni bilib olish",
+    "firstsection": "Biznesingiz",
+    "firsttitle": "SAMARALI FOYDA KELTIRISHIGA YORDAM BERAMIZ.",
+    "secondsec": {
+      "title1": "Mobil ilovalar yaratish",
+      "title2": "Web saytlar yaratish",
+      "title3": "Reklama vebsaytlari",
+      "title4": "O'zbekistonda kontekstli reklama",
+      "title5": "Texnik yordam",
+      "title6": "UI/UX dizayn",
+      "title7": "UX/UI ilova dizayni",
+      "title8": "Dasturlar ishlab chiqish"
+    }
+  }
+}
