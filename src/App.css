@@ -12,6 +12,22 @@
   opacity: 1;
   background-image: url(https://webline.uz/storage/images/55cfbc4afa2a41878abcc736d8ec075e.webp);
 } 
+
+.wreapperhero-hearder {
+  width: 100%;
+  min-height: 50vh;
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  opacity: 1;
+  background-image: url(https://webline.uz/themes/webline/files/servise.webp);
+} 
+/*  */
 /* sx={{
   display: "flex",
   backgroundImage:
@@ -62,10 +78,14 @@
   .wreapper-hearder {
     min-height: 55vh;
   }
+  
 }
 
 @media only screen and (min-width: 1400px) {
   .wreapper-hearder {
     min-height: 100vh;
+  }
+  .wreapperhero-hearder {
+    min-height: 70vh;
   }
 }

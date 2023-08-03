@@ -19,7 +19,7 @@ import { Search } from "@mui/icons-material";
 import { useTranslation } from "react-i18next";
 import { Select } from "antd";
 import { Stack } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 // import ModalSearch from "./Modal";
 import logo from "../assets/logo-no-background.png"
 
@@ -45,44 +45,82 @@ function Header(props) {
   function handleChange(value) {
     console.log(value);
     handleChangeLanguage(value);
+    handleDrawerToggle()
   }
   const getPopupContainer = (triggerNode) => {
     return triggerNode.parentNode; // Use the parent of the Select as the container for the dropdown popup
   };
+  const navigate = useNavigate()
   const drawer = (
     <Box
-      onClick={handleDrawerToggle}
-      sx={{ textAlign: "center", background: "#31c48d", color: '#fff', height: '100vh' }}
+      // onClick={handleDrawerToggle}
+      sx={{ textAlign: "center", background: "#191919", color: '#fff', height: '100vh' }}
     >
-      <Box sx={{ my: 2 }}>MUI</Box>
+      <Box sx={{ my: 3, flexGrow: { sm: 1 } }}>
+        <img
+          style={{ height: '20px' }}
+          src={logo}
+          alt="logo"
+        />
+      </Box>
       <Divider />
       <List>
         <ListItem key={t("body.navbar.home")} disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
+          <ListItemButton onClick={() => {
+            navigate('/')
+            handleDrawerToggle()
+          }} sx={{ textAlign: "center" }}>
             <ListItemText primary={t("body.navbar.home")} />
           </ListItemButton>
         </ListItem>
         <ListItem key={t("body.navbar.services")} disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
+          <ListItemButton onClick={() => {
+            navigate('/services')
+            handleDrawerToggle()
+          }} sx={{ textAlign: "center" }}>
             <ListItemText primary={t("body.navbar.services")} />
           </ListItemButton>
         </ListItem>
         <ListItem key={t("body.navbar.company")} disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
+          <ListItemButton onClick={() => {
+            navigate('/company')
+            handleDrawerToggle()
+          }} sx={{ textAlign: "center" }}>
             <ListItemText primary={t("body.navbar.company")} />
           </ListItemButton>
         </ListItem>
         <ListItem key={t("body.navbar.partfolio")} disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
+          <ListItemButton onClick={() => {
+            navigate('/partfolio')
+            handleDrawerToggle()
+          }} sx={{ textAlign: "center" }}>
             <ListItemText primary={t("body.navbar.partfolio")} />
           </ListItemButton>
         </ListItem>
         <ListItem key={t("body.navbar.contacts")} disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
+          <ListItemButton onClick={() => {
+            navigate('/contacts')
+            handleDrawerToggle()
+          }} sx={{ textAlign: "center" }}>
             <ListItemText primary={t("body.navbar.contacts")} />
           </ListItemButton>
         </ListItem>
       </List>
+      <Stack sx={{ padding: "0 20px" }}>
+        <Select
+          defaultValue="en"
+          theme="dark"
+          onChange={handleChange}
+          size="large"
+          // bordered={false}
+          getPopupContainer={getPopupContainer}
+
+        >
+          <Option value="en">En</Option>
+          <Option value="ru">Ru</Option>
+          <Option value="uz">Uz</Option>
+        </Select>
+      </Stack>
     </Box>
   );
   const container =

@@ -2,7 +2,7 @@ import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material"
 import { useTranslation } from "react-i18next";
 import CardComponent from "../components/CardComponent";
-import Tabscom from "../components/Tabs";
+import BasicTabs from "../components/Tabs";
 
 const HomePage = () => {
   const [t, i18n] = useTranslation("global");
@@ -54,7 +54,7 @@ const HomePage = () => {
           </Container>
         </Stack>
       </div>
-      <Stack sx={{ background: "#f4f4f4", padding: { xs: "50px 0", sm: "100px 0" } }}>
+      <Stack sx={{ background: "#f4f4f4", padding: { xs: "50px 20px", sm: "100px 0" } }}>
         <Container fixed>
           <Typography sx={{ fontSize: { xs: "15px", sm: "18px", md: "25px" }, textAlign: { xs: 'center', sm: 'start' }, textTransform: 'uppercase', fontWeight: '500', paddingBottom: '15px' }}>
             {t('body.firstsection')}
@@ -100,7 +100,7 @@ const HomePage = () => {
           <Typography sx={{ fontSize: { xs: "20px", sm: "25px", md: "35px" }, textAlign: 'center', fontWeight: 'bold' }}>
             {t("body.title3")}
           </Typography>
-          <Tabscom/>
+          <BasicTabs/>
 
 
         </Container>
