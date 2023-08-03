@@ -45,8 +45,13 @@ function Header(props) {
   function handleChange(value) {
     console.log(value);
     handleChangeLanguage(value);
+  }
+  function handleChangez(value) {
+    console.log(value);
+    handleChangeLanguage(value);
     handleDrawerToggle()
   }
+
   const getPopupContainer = (triggerNode) => {
     return triggerNode.parentNode; // Use the parent of the Select as the container for the dropdown popup
   };
@@ -106,11 +111,11 @@ function Header(props) {
           </ListItemButton>
         </ListItem>
       </List>
-      <Stack sx={{ padding: "0 20px" }}>
+      <Stack sx={{ padding: "0 20px", display: {xs: 'flex', sm: "none"} }}>
         <Select
           defaultValue="en"
           theme="dark"
-          onChange={handleChange}
+          onChange={handleChangez}
           size="large"
           // bordered={false}
           getPopupContainer={getPopupContainer}
