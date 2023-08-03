@@ -63,6 +63,10 @@ function Header(props) {
     >
       <Box sx={{ my: 3, flexGrow: { sm: 1 } }}>
         <img
+       onClick={() => {
+        navigate('/')
+        handleDrawerToggle()
+      }}
           style={{ height: '20px' }}
           src={logo}
           alt="logo"
@@ -161,7 +165,10 @@ function Header(props) {
           </IconButton>
           <Box sx={{ flexGrow: { sm: 1 } }}>
             <img
-              style={{ height: '25px' }}
+            onClick={() => {
+              navigate('/')
+            }}
+              style={{ height: '25px', cursor: 'pointer' }}
               src={logo}
               alt="logo"
             />
